@@ -1,0 +1,18 @@
+.Venue {
+    width: 230px;
+    min-height: 350px;
+    padding: 20px 30px;
+    margin: 20px;
+    box-shadow: 2px 2px 5px 3px grey;
+    overflow: auto;
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
+h5 {
+    font-size: 1rem;
+    font-weight: 500;
+    color:coral;
+}
