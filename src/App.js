@@ -4,6 +4,7 @@ import SearchBar from './Components/SearchBar/SearchBar';
 // import Weather from './Components/Weather/Weather';
 import FourSquare from './util/DataApis';
 import SearchResults from './Components/SearchResults/SearchResults';
+import logo from './images/logo.png';
 
 class App extends React.Component {
   constructor(props) {
@@ -25,13 +26,16 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
-        <h1>Wanderlust</h1>
-        <div className="App">
+      <div className="App">
+        <div className="App-nav">
+          <img src={logo} alt="logo" className="App-logo" />
+          <h1>Wanderlust</h1>
+        </div>
+        <div className="App-header">
           <SearchBar onSearch={this.search}/>
           {/* <Weather /> */}
-          <SearchResults venues={this.state.result}/>
         </div>
+        <SearchResults venues={this.state.result}/>
       </div>
     );
   }

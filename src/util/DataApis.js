@@ -7,7 +7,10 @@ const FourSquare = {
         return fetch(`https://api.foursquare.com/v2/venues/explore?near=${term}&limit=5&client_id=${clientId}&client_secret=${clientSecret}&v=20211020`)
             .then(response => response.json()
             ).then(jsonResponse => {
-                console.log(jsonResponse.response.groups[0].items.map(item => item.venue))
+                if(!jsonResponse.response) {
+                    return [];
+                }
+
                 return jsonResponse.response.groups[0].items.map(item => ({
                         id: item.venue.id,
                         name: item.venue.name,

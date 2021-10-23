@@ -5,16 +5,39 @@
     align-items: center;
 }
 
-input {
-    width: 250px;
-    height: 30px;
+h2 {
+    font-size: 1.25rem;
     text-align: center;
-    font-size: 1.125rem;
+}
+
+input {
+    width: 90%;
+    height: 40px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    border: 2px solid white;
+    border-radius: 5px;
 }
 
 button {
-    width: 100px;
-    height: 30px;
+    width: 150px;
+    height: 40px;
     margin: 20px 0;
-    font-size: 1rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+    background-color: #007FFF;
+    color: white;
+    border-radius: 5px;
 }
+  
+input.error {
+border-color: red;
+}
+
+button:disabled {
+background-color: #ddd;
+color: #333;
+}
+  
