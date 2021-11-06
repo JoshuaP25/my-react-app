@@ -1,6 +1,6 @@
 const clientId = 'OEZ0VNYVAYT1YUFX1V0JTK3ANWBHYZA55OTTK4VPUQPEOAXQ';
 const clientSecret = 'XPXWJ1Y20ZTZKWPBQW0WETKNF0OOOYHFHA2EIOWLKXL1RBMT';
-require('dotenv').config()
+
 
 const FourSquare = {
 
